@@ -23,6 +23,7 @@ _minted*/
 *.lof
 reference.bib
 build*/
+!build/*.pdf
 release*/
 
 # ignore compiled docuemnt within root

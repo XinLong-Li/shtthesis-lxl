@@ -24,16 +24,16 @@
   title* = {A~User's~Guide\\to\\\ShtThesis{}~v\version{}},
   keywords = {上海科技大学，学位论文，\LaTeX{}},
   keywords* = {ShanghaiTech~University, Thesis, \LaTeX{}},
-  author = {李润东},
-  author* = {Li~Rundong},
+  author = {李新龙},
+  author* = {Li~Xinlong},
   institution = {上海科技大学信息科学与技术学院},
   institution* = {School~of~Information~Science~and~Technology\\%
                   ShanghaiTech~University},
-  supervisor = {范睿~副教授},
-  supervisor* = {Professor~Fan~Rui},
+  supervisor = {汪阳~助理教授},
+  supervisor* = {Professor~Wang~Yang},
   supervisor-institution = {上海科技大学信息科学与技术学院},
-  discipline-level-1 = {计算机科学与技术},
-  discipline-level-1* = {Computer~Science~and~Technology},
+  discipline-level-1 = {电子科学与技术},
+  discipline-level-1* = {Electronics~Science~and~Technology},
   bib-resource = {reference.bib},
 }
 
@@ -46,7 +46,7 @@
 %   keywords* = {ShanghaiTech~University, Thesis, \LaTeX{}},
 %   date = {2021~年~02~月},
 %   date* = {02~/~2021},
-%   author = {李润东},
+%   author = {李新龙},
 %   author* = {Rundong~Li},
 %   author-id = {36273800},
 %   entrance-year = {2017},
@@ -54,7 +54,7 @@
 %   institution* = {School~of~Information~Science~and~Technology},
 %   supervisor = {范睿},
 %   supervisor* = {Rui~Fan},
-%   discipline = {计算机科学与技术},
+%   discipline = {电子科学与技术},
 %   discipline* = {Computer~Science~and~Technology},
 %   bib-resource = {reference.bib},
 % }
@@ -421,15 +421,15 @@
   title* = {A~User's~Guide\\to\\\ShtThesis{}~v\version{}},
   keywords = {上海科技大学，学位论文，\LaTeX{}},
   keywords* = {ShanghaiTech~University, Thesis, \LaTeX{}},
-  author = {李润东},
-  author* = {Li~Rundong},
+  author = {李新龙},
+  author* = {Li~Xinlong},
   institution = {上海科技大学信息科学与技术学院},
   institution* = {School~of~Information~Science~and~Technology\\%
                   ShanghaiTech~University},
-  supervisor = {范睿~副教授},
-  supervisor* = {Professor~Fan~Rui},
+  supervisor = {汪阳~助理教授},
+  supervisor* = {Professor~W ang},
   supervisor-institution = {上海科技大学信息科学与技术学院},
-  discipline-level-1 = {计算机科学与技术},
+  discipline-level-1 = {电子科学与技术},
   discipline-level-1* = {Computer~Science~and~Technology},
   date = {2020~年~6~月},
   date* = {June,~2020},
@@ -446,7 +446,7 @@
   keywords* = {ShanghaiTech~University, Thesis, \LaTeX{}},
   date = {2020~年~06~月},
   date* = {06~/~2020},
-  author = {李润东},
+  author = {李新龙},
   author* = {Rundong~Li},
   author-id = {36273800},
   entrance-year = {2017},
@@ -454,7 +454,7 @@
   institution* = {School~of~Information~Science~and~Technology},
   supervisor = {范睿},
   supervisor* = {Rui~Fan},
-  discipline = {计算机科学与技术},
+  discipline = {电子科学与技术},
   discipline* = {Computer~Science~and~Technology},
   bib-resource = {reference.bib},
 }
@@ -487,8 +487,8 @@
 \begin{latex}
 \shtsetup{
   % 研究生中英文姓名格式要求
-  author = 李润东,
-  author* = {Li~Rundong}, % 正确写法
+  author = 李新龙,
+  author* = {Li~Xinlong}, % 正确写法
   % author* = {Rundong~Li}, % 错误写法
 }
 \end{latex}
@@ -496,9 +496,9 @@
 \begin{latex}
 \shtsetup{
   % 本科生中英文姓名格式要求
-  author = 李润东,
+  author = 李新龙,
   author* = {Rundong~Li}, % 正确写法
-  % author* = {Li~Rundong}, % 错误写法
+  % author* = {Li~Xin long}, % 错误写法
 }
 \end{latex}
 
@@ -522,8 +522,8 @@
 需要设定的导师信息包括：导师中英文姓名（supervisor 和 supervisor*）和导师单位中文名称（supervisor-institution）。注意在中文封面中，导师姓名和单位分两行显示在“指导教师”条目下。根据《规范》，导师中文姓名（supervisor）应包含导师职称，如教授、副教授、助理教授、研究员、副研究员，以一个半角空格跟随在姓名之后；导师英文姓名（supervisor*）则统一以“Professor”开头，与英文姓名以一个半角空格隔开。导师单位中文名称（supervisor-institution）不可包含换行符。
 \begin{latex}
 \shtsetup{
-  supervisor = {范睿~副教授},
-  supervisor* = {Professor~Fan~Rui},
+  supervisor = {汪阳~助理教授},
+  supervisor* = {Professor~Wang~Yang},
   supervisor-institution = {上海科技大学信息科学与技术学院},
 }
 \end{latex}
@@ -733,13 +733,13 @@ P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \label{eq::bayesian}
 《规范》要求正文中所有图形、表格标题使用中英双语。此需求可以通过 \textsf{bicaption} 宏包实现，如图~\ref{img::sht_logo} 所示。
 \begin{figure}[htb]
   \centering
-  \IfFileExists{shanghaitech-emblem.pdf}{%
-    \includegraphics[width=0.5\columnwidth]{shanghaitech-emblem.pdf}%
+  \IfFileExists{image/shanghaitech-emblem.pdf}{%
+    \includegraphics[width=0.5\columnwidth]{image/shanghaitech-emblem.pdf}%
   }{%
     \fbox{%
       \begin{minipage}[b][2.5cm][c]{0.75\columnwidth}%
         \centering\zihao{-5}\bfseries\sffamily\color{ShtRed}%
-        校徽文件 \texttt{shanghaitech-emblem.pdf} 缺失%
+        校徽文件 \texttt{image/shanghaitech-emblem.pdf} 缺失%
       \end{minipage}%
     }%
   }%
@@ -845,7 +845,7 @@ P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \label{eq::bayesian}
 
 \ifgraduate
 \begin{resume}
-  李润东，\shtthesis{} 项目初版作者及维护者，热爱摸鱼。
+  李新龙，\shtthesis{} 项目初版作者及维护者，热爱摸鱼。
 \end{resume}
 
 \begin{publications}

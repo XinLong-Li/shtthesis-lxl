@@ -426,8 +426,8 @@
   \MakeUppercase{\sht@title@en}%
 }
 \newcommand\sht@head@logo{%
-  \IfFileExists{shanghaitech-emblem.pdf}{%
-    \includegraphics[height=\sht@head@logo@height]{shanghaitech-emblem.pdf}%
+  \IfFileExists{image/shanghaitech-emblem.pdf}{%
+    \includegraphics[height=\sht@head@logo@height]{image/shanghaitech-emblem.pdf}%
   }{%
     \fbox{%
       \begin{minipage}[b][\sht@head@logo@height][c]{0.4\columnwidth}%
@@ -1112,8 +1112,8 @@
 }
 \ExplSyntaxOff
 \newcommand\sht@schoollogo{%
-  \IfFileExists{shanghaitech-emblem.pdf}{%
-    \includegraphics[width=10.48cm]{shanghaitech-emblem.pdf}%
+  \IfFileExists{image/shanghaitech-emblem.pdf}{%
+    \includegraphics[width=10.48cm]{image/shanghaitech-emblem.pdf}%
   }{%
     \begin{center}%
       \fbox{%
@@ -1126,8 +1126,8 @@
 }
 \newcommand\sht@schoollogo@undergraduate{%
   \noindent%
-  \IfFileExists{shanghaitech-emblem.pdf}{%
-    \includegraphics[width=5.39cm]{shanghaitech-emblem.pdf}%
+  \IfFileExists{image/shanghaitech-emblem.pdf}{%
+    \includegraphics[width=5.39cm]{image/shanghaitech-emblem.pdf}%
   }{%
     \fbox{%
       \begin{minipage}[t][1.45cm][c]{0.75\columnwidth}%
