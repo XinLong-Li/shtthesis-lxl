@@ -19,9 +19,9 @@
 \shtsetup{
   degree-name = {工学硕士},
   degree-name* = {Master~of~Science~in~Engineering},
-  secret-level = {白给},
-  title = {\ShtThesis{}~v\version{}~使用说明},
-  title* = {A~User's~Guide\\to\\\ShtThesis{}~v\version{}},
+  secret-level = {},
+  title = {四旋翼无人机的受限空间飞行控制与规划},
+  title* = {Flight Control and Planning of Quadrotor UAV in Constrained Space},
   keywords = {上海科技大学，学位论文，\LaTeX{}},
   keywords* = {ShanghaiTech~University, Thesis, \LaTeX{}},
   author = {李新龙},
@@ -33,7 +33,7 @@
   supervisor* = {Professor~Wang~Yang},
   supervisor-institution = {上海科技大学信息科学与技术学院},
   discipline-level-1 = {电子科学与技术},
-  discipline-level-1* = {Electronics~Science~and~Technology},
+  discipline-level-1* = {Electronic~Science~and~Technology},
   bib-resource = {reference.bib},
 }
 
@@ -55,7 +55,7 @@
 %   supervisor = {范睿},
 %   supervisor* = {Rui~Fan},
 %   discipline = {电子科学与技术},
-%   discipline* = {Computer~Science~and~Technology},
+%   discipline* = {Electronic~Science~and~Technology},
 %   bib-resource = {reference.bib},
 % }
 
@@ -263,7 +263,8 @@
 \fi
 
 \mainmatter
-\chapter{模板介绍}
+
+\chapter{绪论} % 第一章
 \shtthesis{} (\textbf{S}hang\textbf{h}ai\textbf{T}ech University \textbf{THESIS}) 是根据《上海科技大学研究生学位论文撰写规范（初稿）》和《上海科技大学本科毕业论文（设计）工作条例（试行）》（下文统一简称《规范》）编写的、适用于上海科技大学学位论文写作的\emph{非官方} \LaTeX 模板。目前版本（v\version{}）提供了本科、硕士和博士学位论文排版选项，且能够自动生成用于盲审的匿名版以及最终提交的打印版论文。
 
 本文档将尽量详细地阐释 \shtthesis{} 的使用方法和技巧。同时本文档直接使用 \shtthesis{} 排版，其源代码文件 \jobname.tex 也可以作为一个实际样例以供读者参考使用。
@@ -282,7 +283,9 @@
 \foo[this-arg]{另一参数}
 \end{latex}
 
-\chapter{模板使用}
+\chapter{基础知识} % 第二章
+四旋翼动力学、运动学。坐标系选择，momentum theory，actuator disk theory，blade element theory，等等。
+
 \section{模板安装}
 \shtthesis{} 已经发布至 CTAN\footnote{\url{https://www.ctan.org/pkg/shtthesis}} 并已收录至 \TeX{} Live 中，推荐使用 \TeX{} Live 的包管理器 \verb|tlmgr| 直接安装：
 \begin{shell}
@@ -756,11 +759,7 @@ P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \label{eq::bayesian}
 
 \section{附录及其他内容} \label{sec::backmatter}
 正文完成后，使用 \verb|\makebiblio| 命令可生成参考文献，若需读取自定义 bib 文件请参考第~\ref{sec::citation} 节。使用 \verb|\appendix| 命令后，即可像书写正文一样书写附录。默认目录中只显示“附录”一项，不显示附录各级标题。
-\begin{latex}
-\appendix
-\chapter{...}
-% ...
-\end{latex}
+
 
 《规范》要求在文末依此列出致谢、作者简历、攻读学位期间发表的论文与研究成果。用户可使用 \shtthesis{} 提供的相应环境 acknowledgement、resume、publications、patents 和 projects 进行排版。同时为了生成符合盲审要求的论文，\shtthesis{} 也提供了对应的\emph{匿名环境} publications*、patents* 和 projects*。在打开 \verb|anonymous| 选项（第~\ref{sec::option_anonymous} 节）后，论文中不出现“致谢”一节，作者简历内容替换为匿名字符串，其他小节使用匿名环境内容排版。注意在第一次使用任一上述环境前，需要使用 \verb|\backmatter| 切换至后记模式。
 
@@ -789,9 +788,23 @@ P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \label{eq::bayesian}
 % ...
 \end{latex}
 
+\chapter{临近效应和空气动力学} % 第三章
+
+Proximity effect is a phenomenon that occurs when two superconductors are separated by a thin insulating barrier. The proximity effect is a direct consequence of the wave-like properties of the superconducting condensate. The proximity effect is a phenomenon that occurs when two superconductors are separated by a thin insulating barrier. The proximity effect is a direct consequence of the wave-like properties of the superconducting condensate.
+
+\chapter{基于xxx的控制器} % 第四章
+
+\chapter{基于xxx的trajectory planner} % 第五章
+
+\chapter{系统整合与实验验证} % 第六章
+
+\chapter{展望与总结} % 第七章
+
+
+
 \makebiblio
 
-\appendix
+\appendix % 附录及其他内容
 \chapter{其他排版细节测试}
 本章中的测试材料，数学公式部分来自 \textsf{ucasthesis} 附录 B\footnote{\url{https://github.com/mohuangrui/ucasthesis/blob/master/Tex/Appendix.tex}}，生僻字部分来自《生僻字大全（按部首分类）》\footnote{\url{http://xh.5156edu.com/page/z4745m2559j18770.html}}。
 

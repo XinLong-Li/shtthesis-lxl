@@ -4,6 +4,12 @@
 [![CTAN version](https://img.shields.io/ctan/v/shtthesis?style=flat&logo=LaTeX)](https://ctan.org/pkg/shtthesis)
 [![Overleaf](https://img.shields.io/badge/overleaf-shtthesis-green?style=flat&logo=Overleaf&color=1C890F)](https://www.overleaf.com/latex/templates/shanghaitech-university-thesis-template/mskbxkmfxqpt)
 
+这个latex模板是从[李润东的GitHub仓库](https://github.com/lirundong/shtthesis)上fork的，该仓库最近一个commit在2022年3月6日，维护较好。
+
+此外还有更早的[龙晓灵的Github仓库](https://github.com/Haoxiaoling/shtuthesis)，但该仓库从2020年6月年1月之后就没有再维护了。
+
+Special thanks to these two alumin.
+
 ## Daily Log
 
 ### 2025/1/21
