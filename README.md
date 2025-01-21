@@ -6,9 +6,9 @@
 
 这个latex模板是从[李润东的GitHub仓库](https://github.com/lirundong/shtthesis)上fork的，该仓库最近一个commit在2022年3月6日，维护较好。
 
-此外还有更早的[龙晓灵的Github仓库](https://github.com/Haoxiaoling/shtuthesis)，但该仓库从2020年6月年1月之后就没有再维护了。
+此外还有更早的[龙肖灵的Github仓库](https://github.com/Haoxiaoling/shtuthesis)，但该仓库从2020年6月年1月之后就没有再维护了。
 
-Special thanks to these two alumin.
+他们两人都是信息学院2020级硕士毕业生，李润东是范瑞组，龙肖灵是Sören组的。Special thanks to these two alumni.
 
 ## Daily Log
 
